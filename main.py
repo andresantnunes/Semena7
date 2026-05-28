@@ -9,6 +9,8 @@ df_limpeza['Categoria'] = "Limpeza"
 df_alimentos = df_estoque[df_estoque['Descricao'].str.contains(padrao_alimentos, case=False, na=False)].copy()
 df_alimentos['Categoria'] = "Alimentos"
 
+
+
 estoque_categorizado = pd.concat([df_limpeza,df_alimentos], axis=0, ignore_index=True)
 
 df_resultado = estoque_categorizado.sort_values('Codigo')
