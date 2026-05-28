@@ -18,3 +18,7 @@ df_resultado= estoque_categorizado.sort_values('Preco')
 df_resultado= estoque_categorizado.sort_values('Preco')
 
 print(df_resultado)
+
+print(df_resultado['Categoria'].describe())
+print(df_resultado['Preco'].describe())
+print(df_resultado['Preco'].median())
